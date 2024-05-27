@@ -48,3 +48,9 @@ function inputtrash(){
     let inputnote = document.querySelector('input')
     inputnote.value=''
 }
+setInterval(function(){ //change backgroundcolor every two seconde 
+    let redvalue = Math.floor(Math.random() * 255)
+    let greenvalue = Math.floor(Math.random() * 255)
+    let bluevalue = Math.floor(Math.random() * 255)
+    document.body.style.backgroundColor = 'rgb('+redvalue+','+greenvalue+','+bluevalue+')'
+},2000)
